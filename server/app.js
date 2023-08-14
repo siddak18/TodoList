@@ -6,7 +6,9 @@ const mongoose=require("mongoose");
 
 
 app.use(cors());
-app.listen(8000,()=>{
+const port=process.env.PORT||8000;
+console.log(port);
+app.listen(port,()=>{
     console.log("listening at port 8000");
 });
 app.use(express.json());
