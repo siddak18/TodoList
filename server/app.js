@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 // mongodb connectons
-const url="mongodb://127.0.0.1:27017/TodoList"
+const url="mongodb+srv://siddakrajpal:xeatk38wrvtozOH2@cluster0.reunl91.mongodb.net/?retryWrites=true&w=majority"
 //const url="mongodb+srv://siddakrajpal14:TmAZM9aqiQrCk8nC@cluster0.ag1oir9.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(url,{useNewUrlParser:true});
 mongoose.connection.on('connected',()=>{
